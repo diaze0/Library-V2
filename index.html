@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JS
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BOOK</h1>
+    </header>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div id="titre">
+                        <label>Son titre*</label><label class="validation-error hide" id="SonTitreValidationError">This field is required.</label>
+                        <input type="text" name="Son titre" id="SonTitre" maxlength="30">
+                    </div>
+                    <div>
+                        <label>Son auteur</label>
+                        <input type="text" name="Son auteur" id="SonAuteur" maxlength="30">
+                    </div>
+                    <div>
+                        <label>Son prix</label>
+                        <input type="number" name="Son prix" id="SonPrix">
+                    </div>
+                    <div>
+                        <label>Sa date de publication</label> <br>
+                        <input type="date" name="Sa date de publication" id="SaDateDePublication">
+                    </div>
+                    <div>
+                        <label>Sa langue</label> <br>
+                        <select name="Sa langue" id="SaLangue">
+                            <option value="Arabe">Arabe</option>
+                            <option value="Français">Français</option>
+                            <option value="Anglais">Anglais</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Son type</label> <br>
+                        <input type="radio" name="SonType" id="SonType" value="Drama" checked><label>Drama</label>
+                        <input type="radio" name="SonType" id="SonType2" value="Action"><label>Acion</label>
+                        <input type="radio" name="SonType" id="SonType3" value="Sport"><label>Sport</label>
+                    </div>
+                    <div>
+                    <label>Email</label> <br>
+                    <input type="email" name="email" id="email">
+                    </div>  
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                    
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        
+                        <tr>
+                            <th>Son titre</th>
+                            <th>Son auteur</th>
+                            <th>Son prix</th>
+                            <th>Sa date de publication</th>
+                            <th>Sa langue</th>
+                            <th>Son type</th>
+                            <th>Email</th>
+                            <th></th>
+                       
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </div>
+                   
+                         
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
